@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'digital';
+    src: url(../fonts/digital.ttf);
+}
+.cal{
+    width: 320px;
+    border-radius: 7px;
+}
+
+.monitor{
+    border-radius: 7px 7px 0 0;
+    background: #2c3e50;
+    min-height: 95px;
+}
+.cal-body{
+    overflow: hidden;
+}
+
+.cal-body button {
+	width: 25%;
+	float: left;
+	padding: 10px 10px;
+	font-size: 20px;
+	border: 1px solid #ddd;
+}
+.ac-dl-p {
+	width: 50% !important;
+}
+.top-monitor {
+	font-size: 18px;
+
+}
+.bottom-monitor {
+	font-size: 32px;
+	font-weight: 600;
+}
+.bg-color{
+    background: #16a085;
+}
+.bg-color-equal{
+    background: #2c3e50;
+}
+
+/* Analog Clock */
+.clock-1{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(../img/clock-1.png);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    border: 5px solid #10ac84;
+    padding: 10px;
+    box-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hour, .h{
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+
+}
+.hour::before, .h::before{
+    content: '';
+    position: absolute;
+    
+}
+.hour::before{
+    background: #10ac84;
+    width: 6px;
+    height: 81px;
+}
+.h::before {
+	background-image: url(../img/hr.png);
+	background-position: center;
+	background-size: cover;
+	width: 23px;
+	height: 66px;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+.min, .m{
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+
+}
+.min::before, .m::before{
+    content: '';
+    position: absolute;
+    
+}
+.min::before{
+    background: #2c3e50;
+    width: 4px;
+    height: 95px;
+}
+.m::before {
+	background-image: url(../img/min.png);
+	background-position: center;
+	background-size: cover;
+	width: 15px;
+	height: 107px;
+	margin-left: 0px;
+	margin-top: -10px;
+}
+.sec, .s{
+    height: 195px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+
+}
+.sec::before, .s::before{
+    content: '';
+    position: absolute;
+    
+}
+.sec::before{
+    background: red;
+    width: 2px;
+    height: 112px;
+}
+.s::before {
+	background-image: url(../img/sec.png);
+	background-position: center;
+	background-size: cover;
+	min-width: 10px;
+	min-height: 95px;
+	width: 100%;
+	margin-left: 0px;
+	margin-top: 10px;
+}

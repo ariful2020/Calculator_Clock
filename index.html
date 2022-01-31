@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!-- Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Assignment-14</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Check Box Start-->
+                <div class="col-md-6">
+                    <div class="card p-3">
+                        <h2 class="text-center mb-4 mt-1 text-uppercase">Asignment-1</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <h3 class="text-center my-3 text-uppercase">Input</h3>
+                                    <div class="card-body">
+                                        <input type="checkbox" class="skill" id="HTML5" value="HTML5">
+                                        <label for="HTML5">HTML5</label> <br>
+                                        <input type="checkbox" class="skill" id="CSS3" value="CSS3">
+                                        <label for="CSS3">CSS3</label> <br>
+                                        <input type="checkbox" class="skill" id="BOOTSTRAP5" value="BOOTSTRAP5">
+                                        <label for="BOOTSTRAP5">BOOTSTRAP5</label> <br>
+                                        <input type="checkbox" class="skill" id="JAVASCRIPT" value="JAVASCRIPT">
+                                        <label for="JAVASCRIPT">JAVASCRIPT</label> <br>
+                                        <input type="checkbox" class="skill" id="REACT" value="REACT JS">
+                                        <label for="REACT">REACT JS</label> <br>
+                                        <input type="checkbox" class="skill" id="MERN" value="MERN STACK">
+                                        <label for="MERN">MERN STACK</label> <br>
+                                        <input type="checkbox" class="skill" id="PHP" value="PHP">
+                                        <label for="PHP">PHP</label> <br>
+                                        <input type="checkbox" class="skill" id="LARAVEL" value="LARAVEL">
+                                        <label for="LARAVEL">LARAVEL</label> <br>
+                                        <input type="checkbox" class="skill" id="JAVA" value="JAVA">
+                                        <label for="JAVA">JAVA</label> <br>
+                                        <input type="checkbox" class="skill" id="PYTHON" value="PYTHON">
+                                        <label for="PYTHON">PYTHON</label> <br>
+                                        <input type="checkbox" class="skill" id="WORDPRESS" value="WORDPRESS">
+                                        <label for="WORDPRESS">WORDPRESS</label> <br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <h3 class="text-center my-3 text-uppercase">Output</h3>
+                                    <div class="card-body">
+                                        <ul class="list-group" id="chk_output">
+                                           <li class="list-group-item"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Check Box End-->
+                <!-- Calculator Start -->
+                <div class="col-md-6">
+                    <div class="card p-3">
+                        <h3 class="text-center text-uppercase mb-4 mt-2">Calculator</h3>
+                        <div class="card cal m-auto shadow bg-light">
+                            <div class="monitor text-light text-end p-2 shadow-inset">
+                                <div class="top-monitor"></div>
+                                <div class="bottom-monitor"></div>
+                            </div>
+
+                            <div class="cal-body mt-1 p-3">
+                                <button class="ac-dl-p bg-danger text-light" onclick ="allClear()">AC</button>
+                                <button class="ac-dl-p bg-danger text-light" onclick="del()">Del</button>
+                                <!-- <button class="ac-dl-p bg-color text-light" onclick="cal('%')">%</button> -->
+                                <button onclick="cal(1)">1</button>
+                                <button onclick="cal(2)">2</button>
+                                <button onclick="cal(3)">3</button>
+                                <button class=" bg-color text-light" onclick="cal('/')">/</button>
+                                <button onclick="cal(4)">4</button>
+                                <button onclick="cal(5)">5</button>
+                                <button onclick="cal(6)">6</button>
+                                <button class=" bg-color text-light" onclick="cal('*')">*</button>
+                                <button onclick="cal(7)">7</button>
+                                <button onclick="cal(8)">8</button>
+                                <button onclick="cal(9)">9</button>
+                                <button class=" bg-color text-light" onclick="cal('-')">-</button>
+                                <button onclick="cal(0)">0</button>
+                                <button onclick="cal('.')">.</button>
+                                <button class="bg-color-equal text-light" onclick="result()">=</button>
+                                <button class=" bg-color text-light" onclick="cal('+')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- Calculator End -->
+            </div>
+        </div>
+    </section>
+    <section class="my-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <h3 class="text-center my-3 text-uppercase">Clock-1</h3>
+                        <div class="card-body">
+                            <div class="clock-1 shadow">
+                                <span class="hour"></span>
+                                <span class="min"></span>
+                                <span class="sec"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow">
+                        <h3 class="text-center my-3 text-uppercase">Clock-1</h3>
+                        <div class="card-body">
+                            <div class="clock-1 shadow">
+                                <span class="h"></span>
+                                <span class="m"></span>
+                                <span class="s"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/function.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
